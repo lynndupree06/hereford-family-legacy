@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hereford Family Legacy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+        
+        body {
+            font-family: 'Lora', serif;
+            background-color: #fdfbf7;
+            color: #2d241e;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(45, 36, 30, 0.8), rgba(45, 36, 30, 0.8)), 
+                        url('https://images.unsplash.com/photo-1518135714426-c18f5ffb6f4d?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .parchment-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e1da;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #d4cfc7;
+            transform: translateX(-50%);
+        }
+
+        .scroll-reveal {
+            transition: all 0.8s ease-out;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="hero-gradient h-[60vh] flex flex-col items-center justify-center text-center text-white px-4">
+        <h1 class="text-5xl md:text-7xl mb-4 font-bold tracking-tight">The Hereford Legacy</h1>
+        <p class="text-xl md:text-2xl italic font-light max-w-2xl">
+            "We are here together once more in Your name... if You don't be a leader, we wouldn't know the way to go."
+        </p>
+        <div class="mt-8 text-sm uppercase tracking-widest border-t border-b border-white/30 py-2">
+            Stories shared by Aunt Lou (Louisiana)
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-16">
+        
+        <!-- Intro/Dedication -->
+        <div class="text-center mb-20">
+            <h2 class="text-3xl mb-6 italic">A Letter to the Generations</h2>
+            <p class="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
+                These stories are the heartbeat of the Hereford family. Collected during our "Story Time" calls, 
+                they capture the voice of <strong>Aunt Lou</strong> as she passes down the history of our people. 
+                With her daughter <strong>Ingrid</strong> by her side to help keep the memories flowing, 
+                Aunt Lou bridges the gap between the red clay of Pulaski Pike and the digital world of today.
+            </p>
+        </div>
+
+        <!-- The Roots -->
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+            <div class="parchment-card p-8 rounded-lg border-l-4 border-amber-800">
+                <h3 class="text-2xl font-bold mb-4">I. The Foundations: Alberta & Boom Foot</h3>
+                <p class="text-gray-600 mb-4">
+                    The lineage stands tall on the shoulders of <strong>Alberta and Boom Foot</strong>. 
+                    Aunt Lou recalls her mother Alberta and her sister Horn—two women so close in age they 
+                    were practically inseparable.
+                </p>
+                <p class="text-gray-600 italic">
+                    They lived in a time of limited means but unlimited character. Without cars to traverse 
+                    the long road to Madison Street, the family relied on their own feet and their shared faith.
+                </p>
+            </div>
+            <div class="bg-gray-200 h-80 rounded-lg flex items-center justify-center italic text-gray-500 border-2 border-dashed border-gray-300">
+                [Space for Portrait of Alberta & Boom Foot]
+            </div>
+        </div>
+
+        <!-- Pulaski Pike -->
+        <div class="mb-24">
+            <div class="text-center mb-10">
+                <h3 class="text-4xl font-bold">II. Life on Pulaski Pike</h3>
+                <p class="text-amber-800 tracking-widest uppercase text-sm mt-2">The Heart of our Community</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="parchment-card p-6 rounded shadow-sm hover:shadow-md transition">
+                    <h4 class="font-bold text-lg mb-2">The Neighbors</h4>
+                    <p class="text-sm text-gray-600">Remembering Miss Rose Eldridge and the tight-knit circle of families that looked out for one another on the Pike.</p>
+                </div>
+                <div class="parchment-card p-6 rounded shadow-sm hover:shadow-md transition">
+                    <h4 class="font-bold text-lg mb-2">The Long Walks</h4>
+                    <p class="text-sm text-gray-600">Aunt Lou tells of walking through Madison in her nice little dresses—sometimes returning home with them "towed up" after a long day.</p>
+                </div>
+                <div class="parchment-card p-6 rounded shadow-sm hover:shadow-md transition">
+                    <h4 class="font-bold text-lg mb-2">The Madison Fair</h4>
+                    <p class="text-sm text-gray-600">The highlight of the year. A "big thing" where the finery came out and the family's joy was on full display.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resilience/Rowan -->
+        <div class="bg-stone-100 p-10 rounded-2xl mb-24 border border-stone-200">
+            <div class="max-w-2xl mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-6">III. A Story of Resilience: Rowan</h3>
+                <p class="text-lg text-gray-700 mb-6 italic">
+                    "He was a beautiful man, a beautiful athlete..."
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    The family narrative doesn't shy away from the trials. The story of <strong>Rowan</strong>, 
+                    Aunt Lou's brother, is one of immense talent and immense struggle. A star on the football field, 
+                    Rowan's journey through health battles and his time in North Decatur is a testament to the 
+                    unconditional love the Herefords held for their own.
+                </p>
+            </div>
+        </div>
+
+        <!-- Faith Section -->
+        <div class="mb-24 text-center">
+            <h3 class="text-4xl font-bold mb-8">IV. The Anchor of Faith</h3>
+            <div class="relative py-12 px-6 border-y-2 border-double border-amber-900/20">
+                <p class="text-2xl italic font-serif text-amber-900 leading-relaxed max-w-4xl mx-auto">
+                    "Look to the hills from whence cometh your help. My help cometh from the Lord."
+                </p>
+                <p class="mt-6 text-gray-600">
+                    Aunt Lou’s prayers are the backbone of every gathering. Whether reflecting on the "good sermons" 
+                    of the past or asking for protection over the United States today, faith is the inheritance 
+                    she values most.
+                </p>
+            </div>
+        </div>
+
+        <!-- The Call -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+             <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center italic text-gray-500 border-2 border-dashed border-gray-300 order-2 md:order-1">
+                [Space for Story Time Zoom Screenshot]
+            </div>
+            <div class="order-1 md:order-2">
+                <h3 class="text-2xl font-bold mb-4">V. Modern Echoes: Story Time</h3>
+                <p class="text-gray-600 mb-4">
+                    In the summer of 2020, amidst a global pandemic, the Hereford family did what they have always done: 
+                    they gathered. Through the efforts of Ingrid, Jessica, Kecia, Walter, and Nellie, these sessions 
+                    ensure that Aunt Lou's voice—and the stories of Pulaski Pike—will echo forever.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-stone-900 text-stone-400 py-16 text-center">
+        <div class="max-w-xs mx-auto mb-8 border-b border-stone-700 pb-4">
+            <h2 class="text-white text-xl font-serif">Hereford Family</h2>
+            <p class="text-xs tracking-widest uppercase">Est. on Pulaski Pike</p>
+        </div>
+        <p class="text-sm">Compiled from the transcripts of Aunt Lou (Louisiana)</p>
+        <p class="text-xs mt-4 opacity-50">Designed for the Hereford, Brazelton, Williams, and Crutcher generations.</p>
+    </footer>
+
+</body>
+</html>
